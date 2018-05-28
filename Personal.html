@@ -4,12 +4,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Prueba pagina DAW</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	
 	<body>
-		<header>TODOS MIS SERVICIOS</header>
-		<nav>
-			<ul>
+<header>
+	<h1>TODOS MIS SERVICIOS</h1></header>
+		<nav >
+			<ul id="menu">
 			  <li class="nav_li"><a href="Index.html">Principal</a></li>
 			  <li class="nav_li"><a href="QuienesSomos.html">Quienes somos</a></li>
 			  <li class="nav_li"><a href="Personal.html">Personal</a></li>
@@ -20,28 +22,42 @@
 		<aside>			
 		</aside>
 		
-		<section>
-			<h1>Datos Personales</h1>
+		<div id="img_text">
+			<div>
+				<img src="images/blank.png" alt="digital_identity"/>
+			</div>
+			<div>
+				<h2>Datos Personales</h2>
 			
-			<img src="images/digital_identity.jpg" alt="digital_identity"/>
 			
-			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-				culpa qui officia deserunt mollit anim id est laborum."</p>
-
+			
+				<p id="lorem">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+					fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+					culpa qui officia deserunt mollit anim id est laborum."</p>
+			</div>
+			
+		</div>
+		<div>
 			<h2>Servicios registrados</h2>
-			
 			<ul>
-				<li>SRI</li>
-				<li>Telefonia movil</li>
-				<li>Telefonia fija</li>
-				<li>Cable</li>
-				<li>Pensiones alimenticias</li>
+				<li value="sri">SRI</li>
+				<li value="movil">Telefonia movil</li>
+				<li value="fija">Telefonia fija</li>
+				<li value="cable">Cable</li>
+				<li value="pension">Pensiones alimenticias</li>
 			</ul>
-		</section>
+
+			<span id="sri">Servicio del sri</span>
+			<span id="telefonia_movil">Servicio de la telefonia movil</span>
+			<span id="telefonia_fija">Servicio de la telefonia fija </span>
+			<span id="cable">Servicio del cable</span>
+			<span id="pensiones_alimenticias">Servicio de las pensiones alimenticias</span>
+		</div>
+
+			
 		
 	</body>
 </html> 
