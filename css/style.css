@@ -1,3 +1,5 @@
+
+
 #menu{
 	list-style-type: none;	
 	color: white;
@@ -20,13 +22,6 @@ header {
 
 #main{
 	margin-top: 20px;
-}
-li[id="sri"]:hover span[id="sri1"]{
-	display: block;
-}
-
-#sri1, #movil, #fija, #cab, #pension{
-	display: none;
 }
 
 
@@ -125,23 +120,32 @@ img[alt="user_logo"]:hover{
 
 
 
-
-
-
-
-#tweet-1 .name::before {
-  content: "Kevin Mandeville";
+/* Tooltip container */
+.tooltip_serviciosreg {
+    position: relative;
+    display: block;
+  
 }
 
-#tweet-1 .handle::after {
-  content: "@KevinMandeville";
+/* Tooltip text */
+.tooltip_serviciosreg .tooltiptext_serviciosreg {
+    top: -5px;
+    left: 30%; 
+
+    visibility: hidden;
+    width: 200px;
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 10px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
 }
 
-#tweet-1 .copy::before {
-  content: "I'm excited for #TEDC15! Who's going?";
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip_serviciosreg:hover .tooltiptext_serviciosreg {
+    visibility: visible;
 }
-
-#tweet-1 .timestamp::after {
-  content: "1m";
-}
-
