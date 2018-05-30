@@ -6,6 +6,9 @@
 
 }
 
+nav{
+	text-align: center;
+}
 header {
 	 text-align: center;
 	  font-size: 15pt;
@@ -13,6 +16,24 @@ header {
 	  font-style: italic;
 	  color: white;
 	  background-image: url(../images/park_night.jpg);
+}
+
+#main{
+	margin-top: 20px;
+}
+li[id="sri"]:hover span[id="sri1"]{
+	display: block;
+}
+
+#sri1, #movil, #fija, #cab, #pension{
+	display: none;
+}
+
+
+#footer{
+	margin: 2%;
+	border: 2px solid black;
+	padding: 5px;
 }
 
 ul[id="menu"]>li{
@@ -39,36 +60,6 @@ a:visited{
 	text-decoration: none;
 }
 
-.imagen{
-	width: 250px;
-	height: 180px;
-	margin: 10px;
-    box-shadow: 5px 10px #888888;
-}
-
-img[alt="user_logo"]:hover{
-	opacity: 0.5;
-}
-
-#img_text {
-	display: flex;
-}
-
-#calendar_table {
-	display: flex;
-}
-
-#lorem {
-	text-align: justify;
-}
-
-#sri, #telefonia_movil, #telefonia_fija, #cable, #pensiones_alimenticias{
-	display: none;
-}
-
-li[value="sri"]:hover + #sri{
-	display: block !important;
-
 table.paleBlueRows {
 	font-family: "Times New Roman", Times, serif;
 	border: 1px solid #FFFFFF;
@@ -78,6 +69,10 @@ table.paleBlueRows {
 	border-collapse: collapse;
 }
 
+h2{
+	text-decoration: underline;
+	font-size: 18px;
+}
 table.paleBlueRows td, table.paleBlueRows th {
 	border: 1px solid black;
 	padding: 3px 2px;
@@ -102,6 +97,51 @@ table.paleBlueRows thead th {
 	text-align: center;
 }
 
+img[alt="foter"]{
+	width: 170px;
+	height: 100px;
+}
+.imagen{
+	width: 250px;
+	height: 180px;
+	margin: 10px;
+    box-shadow: 5px 10px #888888;
+}
+
+img[alt="user_logo"]:hover{
+	opacity: 0.5;
+}
+
+#img_text {
+	display: flex;
+	margin-bottom: 25px;
+	margin-right: 20px;
+}
+
+#lorem {
+	text-align: justify;
+	margin-top: 15px;
+}
 
 
+
+
+
+
+
+#tweet-1 .name::before {
+  content: "Kevin Mandeville";
+}
+
+#tweet-1 .handle::after {
+  content: "@KevinMandeville";
+}
+
+#tweet-1 .copy::before {
+  content: "I'm excited for #TEDC15! Who's going?";
+}
+
+#tweet-1 .timestamp::after {
+  content: "1m";
+}
 

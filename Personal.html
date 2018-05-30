@@ -1,63 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
 		<meta charset="UTF-8">
 		<title>Prueba pagina DAW</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="css/bootstrap.min.css" rel="stylesheet"/>
 	</head>
 	
 	<body>
-<header>
-	<h1>TODOS MIS SERVICIOS</h1></header>
+		<header>
+		<h1>TODOS MIS SERVICIOS</h1></header>
 		<nav >
 			<ul id="menu">
-			  <li class="nav_li"><a href="Index.html">Principal</a></li>
-			  <li class="nav_li"><a href="QuienesSomos.html">Quienes somos</a></li>
-			  <li class="nav_li"><a href="Personal.html">Personal</a></li>
-			  <li class="nav_li"><a href="./Encuentranos.html">Encuentranos</a></li>
+				<li class="nav_li"><a href="Index.html">Principal</a></li>
+				<li class="nav_li"><a href="QuienesSomos.html">Quienes somos</a></li>
+				<li class="nav_li"><a href="Personal.html">Personal</a></li>
+				<li class="nav_li"><a href="./Encuentranos.html">Encuentranos</a></li>
 			</ul>
 		</nav>
 		
-		<aside>			
-		</aside>
-		
-		<div id="img_text">
-			<div>
-				<img src="images/blank.png" alt="digital_identity"/>
+		<div class="container">
+			<div class="col-md-4"></div>
+			<div class="col-md-8">
+				<div id="img_text">
+					<div>
+						<img src="images/blank.png" alt="digital_identity" class="imagen" />
+					</div>
+					<div>
+						<h2>Datos Personales</h2>
+						<p id="lorem">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+							fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+						culpa qui officia deserunt mollit anim id est laborum."</p>
+					</div>
+				</div>
+				<div>
+					<h2 >Servicios registrados</h2>
+					<ul>
+						<li id="sri">SRI</li>
+						<li id="tel_movil">Telefonia movil</li>
+						<li id="tel_fija">Telefonia fija</li>
+						<li id="cable">Cable</li>
+						<li id="pension_alimenticia">Pensiones alimenticias</li>
+						
+					</ul>
+					<span id="sri1">Servicio del sri</span>
+					<span id="movil">Servicio de la telefonia movil</span>
+					<span id="fija">Servicio de la telefonia fija </span>
+					<span id="cab">Servicio del cable</span>
+					<span id="pension">Servicio de las pensiones alimenticias</span>
+				</div>
 			</div>
-			<div>
-				<h2>Datos Personales</h2>
-			
-			
-			
-				<p id="lorem">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-					fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-					culpa qui officia deserunt mollit anim id est laborum."</p>
-			</div>
-			
 		</div>
-		<div>
-			<h2>Servicios registrados</h2>
-			<ul>
-				<li value="sri">SRI</li>
-				<li value="movil">Telefonia movil</li>
-				<li value="fija">Telefonia fija</li>
-				<li value="cable">Cable</li>
-				<li value="pension">Pensiones alimenticias</li>
-			</ul>
-
-			<span id="sri">Servicio del sri</span>
-			<span id="telefonia_movil">Servicio de la telefonia movil</span>
-			<span id="telefonia_fija">Servicio de la telefonia fija </span>
-			<span id="cable">Servicio del cable</span>
-			<span id="pensiones_alimenticias">Servicio de las pensiones alimenticias</span>
-		</div>
-
-			
 		
+		
+		<div class="row" id="footer">
+			<div class="col-md-4" id="text_footer">
+				© El contenido de esta obra es de propiedad intelectual de nuestro grupo. Todos los derechos reservados. Prohibida su reproduccion totalm parcial, comunicación pública y distrinución sin autorización previa del titural de los derechos
+			</div>
+			<div class="col-md-6">
+				
+			</div>
+			<div class="col-md-2">
+				<img src="images/blank.png" alt="foter"/>
+			</div>
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
 	</body>
-</html> 
+</html>
