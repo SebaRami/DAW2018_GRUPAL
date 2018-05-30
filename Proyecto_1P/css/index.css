@@ -1,0 +1,23 @@
+#img-banner{
+	height: 100vh;
+	width: 100%;
+}
+
+#home-banner{
+	position: relative;
+	text-align: center;
+    color: white;
+}
+
+.centered{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-centered{
+	position: absolute;
+	left: 50%;
+    top: 100px;
+}
