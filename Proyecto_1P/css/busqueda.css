@@ -1,0 +1,22 @@
+.img_busqueda{
+	margin-bottom: 10px;
+	width: 200px;
+	height: 170px;
+}
+
+#images_search{
+	margin-top: 25px;
+}
+
+.search_section{
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+
+.input-group{
+	display: flex;
+}
+
+.col{
+	padding: 10px;
+}
