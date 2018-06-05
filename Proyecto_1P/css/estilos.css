@@ -73,3 +73,15 @@
   margin-top: 20px;
 }
 
+aside .container{
+	position:absolute;
+	top:50px;
+	left:50px;
+}
+
+form[name="registrar"]{
+	position:absolute;
+	top:100px;
+	left:50px;
+}
+
