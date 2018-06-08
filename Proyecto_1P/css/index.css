@@ -11,13 +11,71 @@
 
 .centered{
 	position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 .top-centered{
 	position: absolute;
 	left: 50%;
     top: 100px;
+}
+
+div[class=centered]>h1{
+	font-size: 55px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+div[class=centered]>p{
+	margin-top: 2%;
+	font-size: 20px;
+}
+
+.btn-home{
+	border-radius: 30px;
+	margin-top: 2%;
+	background-color: white;
+	color: black;
+	font-size: 15px;
+}
+
+.btn-home:hover{
+	background: #00000082;
+    color: white;
+}
+
+.div-img{
+	text-align: center;
+}
+
+.div-icon{
+	text-align: center;
+}
+
+img[alt="img_hacemos"]{
+	width: 298px;
+	min-height: 160px;
+	height: auto;
+}
+
+img[alt="img_hacemos"]:hover{
+	opacity: 0.4;
+}
+
+.icon-fa{
+	 font-size:10em; 
+	 color:red;
+	 border: 2px solid red;
+	 padding-left: 4%;
+     padding-right: 4%;
+}
+
+.icon-fa:hover{
+	color: white;
+	border: none;
+	background: red;
+	transition: 0.7s;
 }
