@@ -27,83 +27,71 @@
 					<a class="twitter-timeline" data-width="220" data-height="500" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/TwitterDev/likes?ref_src=twsrc%5Etfw">Tweets Liked by @TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			
 			</div>
-			<div class="col-md-8">
+			<div class="col-md-4 ">
 				<h1>Envianos tus opiniones</h1>
-				<table>
-					<tr>
-						<td>Nombres completos</td>
-						<td>
-							<input required />
-							<input type="text" name="Nombres">
-						</td>
-					</tr>
-					
-					<tr>
-						<td>Correos electronicos</td>
-						<td>
-							<input required />
-							<input type="text" name="Nombres">
-						</td>
-					</tr>
-					
-					<tr>
-						<td>Utilidad del sitio</td>
-						<td>
-							<form>
-								<input type="radio" checked> Nada<br>
-								<input type="radio"> Poco<br>
-								<input type="radio"> Algo <br>
-								<input type="radio"> Muy <br>
-								<input type="radio"> Completamente<br>
-							</form>
-						</td>
-					</tr>
-					
-					<tr>
-						<td>Provincia</td>
-						<td>
-							<form>
-								<select name="cars">
-									<option value="volvo">Guayas</option>
-									<option value="saab">Pichincha</option>
-									<option value="fiat">Esmeraldas</option>
-									<option value="audi">Azuay</option>
-								</select>
-							</form>
-						</td>
-					</tr>
-					
-					<tr>
-						<td>Edad</td>
-						
-						<td>
-							<form>
-								<input type="number" name="points" step="1"> Años
-							</form>
-						</td>
-					</tr>
-					
-					<tr>
-						<td>Comentarios</td>
-						
-						<td>
-							<form>
-								<textarea rows="4" cols="50"></textarea>
-							</form>
-						</td>
-					</tr>
-				</table>
+				<form>
+		<div class="form-group">
+			<label for="formGroupExampleInput">Nombre Completo</label>
+			<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ricardo Mora">
+		  </div>		 	
+  
+		  <div class="form-group">
+			<label for="exampleInputEmail1">Correo electronico</label>
+			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ejemplo@gmail.com">
+			<small id="emailHelp" class="form-text text-muted">No compartiremos tu correo con nadie.</small>
+		  </div>
+		  
+		  <label >Utilidad</label>
+		  
+			<div class="form-check form-check-inline">			 
+			  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+			  <label class="form-check-label" for="inlineCheckbox1">Inutil</label>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+			  <label class="form-check-label" for="inlineCheckbox2">Poco util</label>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" 	>
+			  <label class="form-check-label" for="inlineCheckbox3">Util</label>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" 	>
+			  <label class="form-check-label" for="inlineCheckbox3">Muy Util</label>
+			</div>
+
+		  <div class="form-group">		  
+		  <label for="exampleFormControlSelect1">Provincia</label>
+			<select class="form-control" id="exampleFormControlSelect1">
+			  <option>Guayas</option>
+			  <option>Pichincha</option>
+			  <option>Manabi</option>
+			  <option>Azuay</option>			  
+			</select>
+		  </div>		  
+		  		  
+		  <div class="form-group">
+			<label for="exampleFormControlTextarea1">Comentarios</label>
+			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+		  </div>
+		  <button type="submit" class="btn btn-primary">Enviar</button>
+		  
+		</form>
+		
 			</div>
 		</div>
-			
+		
+		
+		
+		
 		<div class="row" id="footer">
-			<div class="col-md-4 col-sm-4" id="text_footer">
+			<div class="col-md-4" id="text_footer">
 				© El contenido de esta obra es de propiedad intelectual de nuestro grupo. Todos los derechos reservados. Prohibida su reproduccion totalm parcial, comunicación pública y distrinución sin autorización previa del titural de los derechos
 			</div>
-			<div class="col-md-6 col-sm-6 centered">
+			<div class="col-md-6">
 				
 			</div>
-			<div class="col-md-2 centered">
+			<div class="col-md-2">
 				<img src="images/blank.png" alt="foter"/>
 			</div>
 		</div>
@@ -111,4 +99,4 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 	</body>
-</html>s
+</html>
