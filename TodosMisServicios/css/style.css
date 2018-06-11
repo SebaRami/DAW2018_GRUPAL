@@ -97,8 +97,8 @@ img[alt="foter"]{
 	height: 100px;
 }
 .imagen{
-	width: 250px;
-	height: 180px;
+	width: 95%;
+	height: auto;
 	margin: 10px;
     box-shadow: 5px 10px #888888;
 }
@@ -107,18 +107,20 @@ img[alt="user_logo"]:hover{
 	opacity: 0.5;
 }
 
-#img_text {
-	display: flex;
-	margin-bottom: 25px;
-	margin-right: 20px;
-}
 
 #lorem {
 	text-align: justify;
 	margin-top: 15px;
 }
 
+.centered{
+	text-align: center;
+}
 
+.flexed{
+	display: flex;
+    justify-content: center;
+}
 
 /* Tooltip container */
 .tooltip_serviciosreg {
