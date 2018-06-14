@@ -13,6 +13,18 @@
   text-transform: uppercase;
 }
 
+#login{
+	margin-top:100px;
+	margin-bottom:100px;
+	width:350px;
+}
+
+#signup{
+	margin-top:100px;
+	margin-bottom:100px;
+	width:350px;
+}
+
 footer{	
 	display:flex;
 	justify-content:center;
