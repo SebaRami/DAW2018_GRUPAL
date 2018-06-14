@@ -25,6 +25,10 @@
 	width:350px;
 }
 
+#integrantes{
+	margin-top:100px;
+}
+
 footer{	
 	display:flex;
 	justify-content:center;
