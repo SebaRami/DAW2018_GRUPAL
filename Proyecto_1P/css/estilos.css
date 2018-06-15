@@ -13,28 +13,31 @@
   text-transform: uppercase;
 }
 
-#login{
-	margin-top:100px;
-	margin-bottom:100px;
-	width:350px;
-}
 
-#signup{
-	margin-top:100px;
-	margin-bottom:100px;
-	width:350px;
-}
-
-#integrantes{
-	margin-top:100px;
-}
-
-footer{	
+#integrantes_block , #signup_form, #login_form{	
 	display:flex;
+	flex-direction:column;
+	align-items:center;
 	justify-content:center;
+	
+	/*line for debugging*/
+	/*border:1px red solid;	*/
+	flex-grow:1; /*important to push the footer at the bottom*/
+}
+
+
+body.quienes_somos , body.login, body.signup{	
+	height:100vh;/*important to push the footer at the bottom*/
+	display:flex;
+	flex-direction:column;	
+}
+
+
+footer{
+	display:flex;
+	justify-content:center;	
 	background-color:black;
 	margin-top:15px;
-	margin-bottom:0px;
 	padding:10px;
 	color:gray;
 }
