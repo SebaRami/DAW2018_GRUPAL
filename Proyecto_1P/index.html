@@ -48,9 +48,9 @@
         <div id="home-banner">
           <img src="img/banner_index.jpg" id="img-banner" alt="" />
           <div class="centered">
-            <h1>Aprende sobre el teatro</h1>
-            <p>La mejor forma de estudiar actores, aprender de ellos e interesarte en el arte</p>
-            <a href="base.html" class="btn btn-home btn-lg" role="button">Empieza YA!</a>
+            <h1>Personajes</h1>
+            <p></p>
+            <a href="base.html" class="btn btn-home btn-lg" role="button">Encuentra el tuyo</a>
           </div>
         </div>
     </div>
@@ -80,8 +80,16 @@
         <div class="row">
           <div class="col-md-4 div-icon">
             <p>Sube fotos de tus actuaciones</p>
-            <i class="fas fa-camera-retro icon-fa"></i>
-          </div>
+            <i class="fas fa-camera-retro icon-fa"></i>			
+			
+			<!-- Snippet of https://github.com/Zhouzi/TheaterJS 
+				 The most simple was picked and adapted
+				 Match id of the div with theaterjs.js-->
+			<div id="jarbis"></div>			
+			<!-- MAP-->		
+			<div id="map"></div>	
+			
+		  </div>
           <div class="col-md-4 div-icon">
             <p>Compartenos tus tips</p>
             <i class="fas fa-arrow-alt-circle-up icon-fa"></i>
@@ -105,12 +113,31 @@
         </div>
     </div>
       
-      <footer>	
+
+	
+    <footer>	
         Proyecto de DAW1S - 2018&copy;
-      </footer>
+    </footer>
+	
+	
+	
+	<!-- Snippet from Snippet of https://github.com/Zhouzi/TheaterJS 
+		(the most simple one and adapted)-->
+	<script src="js/TheaterJS.js"></script>
+	 	 
+	<!-- Google Map function --> 
+	<script src="js/google_map.js"></script>	
+	
+	<!-- ****** -->
+	<!-- Insert google api call with key provide by Alej-->
+	<!-- ****** -->
+	
+	  
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
+	  
+	  
     </body>
   </html>

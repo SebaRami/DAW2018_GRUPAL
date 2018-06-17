@@ -35,9 +35,43 @@ body.quienes_somos , body.login, body.signup{
 
 footer{
 	display:flex;
+
 	justify-content:center;	
 	background-color:black;
 	margin-top:15px;
 	padding:10px;
 	color:gray;
+}
+
+
+/**
+	Style for google map
+**/
+#map{		
+	width: 50vh;
+	height:50vh;
+	border: 1px solid black;
+}	
+
+/**
+	Style for TheaterJS snippet
+**/
+#jarbis{
+	width:300px;
+	height:50px;
+	border: 1px solid gray;
+	border-radius: 3px;
+	font-family:"Courier new", "Lucida Console", monospace;
+	margin:5px;
+	padding:5px;
+}
+
+#jarbis::after{
+	content:"|";
+	animation: blink 500ms infinite;
+}
+
+@keyframes blink {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
