@@ -74,24 +74,15 @@
           </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <p class="text-center titulo">
           ¿Qué hacemos?
         </p>
+		
         <div class="row">
           <div class="col-md-4 div-icon">
             <p>Sube fotos de tus actuaciones</p>
-            <i class="fas fa-camera-retro icon-fa"></i>			
-			
-			<!-- Snippet of https://github.com/Zhouzi/TheaterJS 
-				 The most simple was picked and adapted
-				 Match id of the div with theaterjs.js-->
-			<div id="jarbis"></div>			
-			<!-- MAP-->		
-			<div id="map"></div>	
-			
-			
-			
+            <i class="fas fa-camera-retro icon-fa"></i>												
 		  </div>
           <div class="col-md-4 div-icon">
             <p>Compartenos tus tips</p>
@@ -115,8 +106,22 @@
           </div>
         </div>
 		
-		<!-- CSS timeline retrieved from  -->
-			<div id="timeline_container">
+			<div class="row">
+		
+			
+			<!-- Snippet of https://github.com/Zhouzi/TheaterJS 
+				 The most simple was picked and adapted
+				 Match id of the div with theaterjs.js-->
+				 
+			<div id="jarbis" class="col-md-3"></div>			
+			<!-- MAP-->		
+			<div id="map" class="col-md-3"></div>			
+			
+			</div>
+			
+			<div class ="row">			
+			<!-- CSS timeline  -->
+			<div id="timeline_container" class="col-md-12">
 			  <h1>Timeline Concept</h1>
 
 			  <ul class="timeline">
@@ -138,6 +143,7 @@
 				</li>
 			  </ul>
 			</div>
+			</div>
     </div>
       
 	
@@ -158,7 +164,6 @@
 	<!-- ****** -->
 	<!-- Insert google api call with key provide by Alej-->
 	<!-- ****** -->
-	
 	  
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
