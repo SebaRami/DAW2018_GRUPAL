@@ -165,3 +165,11 @@ h1 {
   content: "";
   top: 5px;
 }
+
+.ocultar {
+  display: none;
+}
+
+.mostrar {
+  display: block;
+}

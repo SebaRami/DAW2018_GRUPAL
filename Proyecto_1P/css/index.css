@@ -3,6 +3,20 @@
 	width: 100%;
 }
 
+#map{
+	width:400px;
+	height:100%;
+}
+
+.container{
+	margin-top: 4%;
+}
+
+#container_maps{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 #home-banner{
 	position: relative;
 	text-align: center;
@@ -65,12 +79,17 @@ img[alt="img_hacemos"]:hover{
 	opacity: 0.4;
 }
 
+div[class*="div-icon"]>p{
+	font-size: 20px;
+}
+
 .icon-fa{
 	 font-size:10em; 
 	 color:red;
 	 border: 2px solid red;
 	 padding-left: 4%;
      padding-right: 4%;
+     border-radius: 20px;
 }
 
 .icon-fa:hover{

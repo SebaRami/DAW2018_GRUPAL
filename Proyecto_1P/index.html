@@ -9,22 +9,23 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/index.css" rel="stylesheet"/>
     <link href="css/estilos.css" rel="stylesheet"/>
-	
+    
     <script defer src="js/fontawesome-all.js"></script>
+
     
   </head>
   <body>
     <nav class="navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
-		
-		
+        
+        
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" 
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
           aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
           </button>
         </div>
         
@@ -34,28 +35,29 @@
           <ul class="nav navbar-nav">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="busqueda.html">Busqueda</a></li>
-            <li><a href="quienes_somos.html">¿Quienes Somos?</a></li>			           
+            <li><a href="quienes_somos.html">¿Quienes Somos?</a></li>
           </ul>
           
           <ul class="nav navbar-nav navbar-right">
             <li><a href="inicio_sesion.html">Inicia Sesión</a></li>
             <li><a href="registrar.html">Registrate</a></li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </div>
-    </nav>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </nav>
       
-    <div id="secion-banner">
+      <div id="secion-banner">
         <div id="home-banner">
           <img src="img/banner_index.jpg" id="img-banner" alt="" />
           <div class="centered">
-            <h1>Personajes</h1>
+            <h1>Actuaciones personajes <br/>y muchos mas</h1>
             <p></p>
-            <a href="base.html" class="btn btn-home btn-lg" role="button">Encuentra el tuyo</a>
+            <a href="busqueda.html" class="btn btn-home btn-lg" role="button">Informate</a>
           </div>
         </div>
-    </div>
-    <div class="container">
+      </div>
+
+      <div class="container">
         <p class="text-center titulo">
           Más sobre nosotros
         </p>
@@ -73,104 +75,89 @@
             <img src="img/conectate.jfif" alt="img_hacemos" class="img-thumbnail"/>
           </div>
         </div>
-    </div>
-    <div class="container-fluid">
+      </div>
+
+      <div class="container">
         <p class="text-center titulo">
           ¿Qué hacemos?
         </p>
-		
+      </div>
+
+      <div class="container" id="fa_awesome">
         <div class="row">
-          <div class="col-md-4 div-icon">
-            <p>Sube fotos de tus actuaciones</p>
-            <i class="fas fa-camera-retro icon-fa"></i>												
-		  </div>
-          <div class="col-md-4 div-icon">
-            <p>Compartenos tus tips</p>
+          <div class="col-md-4 col-sm-4 col-xs-4 div-icon">
+            <p class="subtitulo">Sube fotos de tus actuaciones</p>
+            <i class="fas fa-camera-retro icon-fa"></i>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-4 div-icon">
+            <p class="subtitulo">Compartenos tus tips</p>
             <i class="fas fa-arrow-alt-circle-up icon-fa"></i>
           </div>
-          <div class="col-md-4 div-icon">
-            <p>Busca informacion</p>
+          <div class="col-md-4 col-sm-4 col-xs-4 div-icon">
+            <p class="subtitulo">Busca informacion</p>
             <i class="fas fa-bed icon-fa"></i>
           </div>
-          <div class="col-md-4 div-icon">
-            <p>No se que poner aqui</p>
-            <i class="fas fa-arrow-alt-circle-up icon-fa"></i>
-          </div>
-          <div class="col-md-4 div-icon">
-            <p>x2</p>
-            <i class="fas fa-coffee icon-fa"></i>
-          </div>
-          <div class="col-md-4 div-icon">
-            <p>x3</p>
-            <i class="fas fa-chart-pie icon-fa"></i>
+        </div>
+      </div>
+
+      <div class="container" id="container_maps">
+
+          <h2>ENCUENTRANOS ;)</h2>
+          <div id="map"></div>
+          <div id="jarbis"></div>
+      </div>
+
+      <div class="container">
+        <div class ="row">
+          
+          <!-- CSS timeline  -->
+          <!-- data-date is an atribute to set the date, is defined by us-->
+          <div id="timeline_container" class="col-md-12">
+            <h1>Linea de tiempo</h1>
+            <ul class="timeline">
+              <li class="event" data-date="19 de Mayo/2018">
+                <h3>Idea de proyecto</h3>
+                <p>Concebimos la idea del proyecto, como un recurso valioso para actores.</p>
+              </li>
+              <li class="event" data-date="5 de Junio/2018">
+                <h3>Diseño preliminar</h3>
+                <p>Establecimos el formato del sitio web y subimos las pimeras paginas a GitHub.</p>
+              </li>
+              <li class="event" data-date="17 de Junio/2018">
+                <h3>Snippets y Timeline</h3>
+                <p>Agregamos un snippet interactivo basado en javascript y colocamos un timeline.</p>
+              </li>
+              <li class="event" data-date="22 de Junio/2018">
+                <h3>Presentacion de avance</h3>
+                <p>Pulimos el trabajo realizado para presentarlo como avance.</p>
+              </li>
+            </ul>
           </div>
         </div>
-		
-			<div class="row">
-		
-			
-			<!-- Snippet of https://github.com/Zhouzi/TheaterJS 
-				 The most simple was picked and adapted
-				 Match id of the div with theaterjs.js-->
-				 
-			<div id="jarbis" class="col-md-3"></div>			
-			<!-- MAP-->		
-			<div id="map" class="col-md-3"></div>			
-			
-			</div>
-			
-			<div class ="row">			
-			
-			<!-- CSS timeline  -->
-			<!-- data-date is an atribute to set the date, is defined by us-->
-			<div id="timeline_container" class="col-md-12">
-			  <h1>Linea de tiempo</h1>
-
-			  <ul class="timeline">
-				<li class="event" data-date="19 de Mayo/2018">
-				  <h3>Idea de proyecto</h3>
-				  <p>Concebimos la idea del proyecto, como un recurso valioso para actores.</p>
-				</li>
-				<li class="event" data-date="5 de Junio/2018">
-				  <h3>Diseño preliminar</h3>
-				  <p>Establecimos el formato del sitio web y subimos las pimeras paginas a GitHub.</p>    
-				</li>
-				<li class="event" data-date="17 de Junio/2018">
-				  <h3>Snippets y Timeline</h3>
-				  <p>Agregamos un snippet interactivo basado en javascript y colocamos un timeline.</p>    
-				</li>
-				<li class="event" data-date="22 de Junio/2018">
-				  <h3>Presentacion de avance</h3>
-				  <p>Pulimos el trabajo realizado para presentarlo como avance.</p>    
-				</li>
-			  </ul>
-			</div>
-			</div>
-    </div>
+      </div>
       
-	
-			
-	
-    <footer>	
+      
+      
+      
+      <footer>
         Proyecto de DAW1S - 2018&copy;
-    </footer>
-		
-	
-	<!-- Snippet from Snippet of https://github.com/Zhouzi/TheaterJS 
-		(the most simple one and adapted)-->
-	<script src="js/TheaterJS.js"></script>
-	 	 
-	<!-- Google Map function --> 
-	<script src="js/google_map.js"></script>	
-	
-	<!-- ****** -->
-	<!-- Insert google api call with key provide by Alej-->
-	<!-- ****** -->
-	  
+      </footer>
+      
+      
+      <!-- Snippet from Snippet of https://github.com/Zhouzi/TheaterJS
+      (the most simple one and adapted)-->
+      <script src="js/TheaterJS.js"></script>
+      
+      <!-- ****** -->
+      <!-- Insert google api call with key provide by Alej-->
+      <!-- ****** -->
+      
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
-	  	  
+      <script src="js/scripts.js"></script>
+
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtM6SeGPu3r34XWj2umqZFIKjn12ye7rs&callback=myMap"></script>
     </body>
   </html>
