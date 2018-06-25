@@ -1,17 +1,3 @@
-function myMap() {
-	var myLatLng = {lat:-2.148146, lng:-79.964489}
-	var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 10,
-          center: myLatLng
-        });
-
-    var marker = new google.maps.Marker({
-      position: myLatLng,
-      map: map,
-      title: 'ESPOL!'
-    });
-}
-
 function busquedaFiltro(){
 	text = document.getElementById('texto').value;
 	var divs = document.querySelectorAll('div#images_search > div > img');

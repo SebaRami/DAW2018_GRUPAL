@@ -20,8 +20,9 @@
 	align-items:center;
 	justify-content:center;
 	
-	/*line for debugging*/
-	/*border:1px red solid;	*/
+	
+	/*border:1px red solid;*/ /*line for debugging*/
+	
 	flex-grow:3; /*important to push the footer at the bottom*/
 }
 
@@ -165,6 +166,10 @@ h1 {
   content: "";
   top: 5px;
 }
+
+/****************
+	Style for searching	
+*****************/
 
 .ocultar {
   display: none;

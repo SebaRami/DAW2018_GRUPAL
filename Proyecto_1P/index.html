@@ -103,7 +103,10 @@
       <div class="container" id="container_maps">
 
           <h2>ENCUENTRANOS ;)</h2>
+		  <!-- the div below shows the google map-->
           <div id="map"></div>
+		  
+		  <!-- the div below plays the snippet of theater.js mat-->
           <div id="jarbis"></div>
       </div>
 
@@ -145,19 +148,23 @@
       
       
       <!-- Snippet from Snippet of https://github.com/Zhouzi/TheaterJS
-      (the most simple one and adapted)-->
+		(the most simple one and adapted)-->
       <script src="js/TheaterJS.js"></script>
       
-      <!-- ****** -->
-      <!-- Insert google api call with key provide by Alej-->
-      <!-- ****** -->
+	  
+     
+	  <!-- function required by google map api-->
+	  <script src="js/google_map.js"></script>
+      <!-- call to google map api -->     
+	  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtM6SeGPu3r34XWj2umqZFIKjn12ye7rs&callback=myMap"></script> 
       
+	  
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      
+	  <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
       <script src="js/scripts.js"></script>
 
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtM6SeGPu3r34XWj2umqZFIKjn12ye7rs&callback=myMap"></script>
     </body>
   </html>
