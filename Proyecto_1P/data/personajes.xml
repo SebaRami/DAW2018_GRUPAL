@@ -1,0 +1,50 @@
+<personajes>
+	<personaje>
+		<nombre>albañil</nombre>
+		<personalidad>timido,inteligente</personalidad>			
+		<referencias>
+			<referencia>google.com</referencia>
+		</referencias>
+	</personaje>	
+	
+	<personaje>
+		<nombre>arquitecto</nombre>
+		<personalidad>timido,inteligente</personalidad>		
+		<referencias>
+			<referencia>google.com</referencia>
+		</referencias>
+	</personaje>
+	
+	<personaje>
+		<nombre>astronauta</nombre>
+		<personalidad>timido,inteligente</personalidad>		
+		<referencias>
+			<referencia>google.com</referencia>
+		</referencias>
+	</personaje>
+	
+	<personaje>
+		<nombre>bombero</nombre>
+		<personalidad>timido,inteligente</personalidad>		
+		<referencias>
+			<referencia>google.com</referencia>
+		</referencias>
+	</personaje>
+	
+	<personaje>
+		<nombre>carnicero</nombre>
+		<personalidad>timido,inteligente</personalidad>		
+		<referencias>
+			<referencia>google.com</referencia>
+		</referencias>
+	</personaje>
+	
+	<personaje>
+		<nombre>cientifico</nombre>
+		<personalidad>timido,inteligente</personalidad>		
+		<referencias>
+			<referencia>google.com</referencia>
+		</referencias>
+	</personaje>
+	
+</personajes>

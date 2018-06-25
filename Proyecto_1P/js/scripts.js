@@ -19,3 +19,4 @@ function busquedaFiltro(){
 	document.getElementById('texto').onkeyup = busquedaFiltro;
 	$('#texto').on('keyup', busquedaFiltro);
 })();
+
