@@ -1,7 +1,7 @@
 .titulo{
-  font-size: 30px;
+  font-size: 50px;
   text-transform: uppercase;
-
+  color: #812f35;
 }
 
 .subtitulo{
@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   min-height: 56px;
+  margin-top: 4%;
   font-size: 20px;
   text-transform: uppercase;
 }

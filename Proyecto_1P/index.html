@@ -11,7 +11,6 @@
     <link href="css/estilos.css" rel="stylesheet"/>
     
     <script defer src="js/fontawesome-all.js"></script>
-
     
   </head>
   <body>
@@ -56,60 +55,69 @@
           </div>
         </div>
       </div>
-
       <div class="container">
         <p class="text-center titulo">
           Más sobre nosotros
         </p>
-        <div class="row">
+        <div class="row row-index">
           <div class="col-md-4 div-img">
-            <p class="subtitulo">Añade tus experiencias</p>
-            <img src="img/experiencias.jpg" alt="img_hacemos" class="img-thumbnail" />
+            <!-- Este div no estaba, lo cree para darle el fondo gris y no se unan las columnas-->
+            <div class="inner">
+              <p class="subtitulo">Añade tus experiencias</p>
+              <img src="img/experiencias.jpg" alt="img_hacemos" class="img-thumbnail" />
+              <p class="p-div-image">
+                Puedes subir tus comentariosn y experiencias, ya sean de obras que hayas visto u obras en las que actuaste.
+              </p>
+            </div>
+            
           </div>
           <div class="col-md-4 div-img">
-            <p class="subtitulo">Busca informacion</p>
-            <img src="img/busca.png" alt="img_hacemos" class="img-thumbnail"/>
+            <div class="inner">
+              <p class="subtitulo">Busca informacion</p>
+              <img src="img/busca.png" alt="img_hacemos" class="img-thumbnail"/>
+              <p class="p-div-image">
+                En nuestro páginas podras encontrar informacion y consejos de otros actores o críticos.
+              </p>
+            </div>
           </div>
           <div class="col-md-4 div-img">
-            <p class="subtitulo">Conectate con demas personas</p>
-            <img src="img/conectate.jfif" alt="img_hacemos" class="img-thumbnail"/>
+            <div class="inner">
+              <p class="subtitulo">Conectate con demas personas</p>
+              <img src="img/conectate.jfif" alt="img_hacemos" class="img-thumbnail"/>
+              <p class="p-div-image">
+                Contáctate con algun actor, podras preguntarle personalmente sobre alguna duda que tengas aún.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="container">
+      <div class="container" id="fa_awesome">
         <p class="text-center titulo">
           ¿Qué hacemos?
         </p>
-      </div>
-
-      <div class="container" id="fa_awesome">
         <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-4 div-icon">
+          <div class="col-md-4 col-sm-4 col-xs-12 div-icon">
             <p class="subtitulo">Sube fotos de tus actuaciones</p>
             <i class="fas fa-camera-retro icon-fa"></i>
           </div>
-          <div class="col-md-4 col-sm-4 col-xs-4 div-icon">
+          <div class="col-md-4 col-sm-4 col-xs-12 div-icon">
             <p class="subtitulo">Compartenos tus tips</p>
             <i class="fas fa-arrow-alt-circle-up icon-fa"></i>
           </div>
-          <div class="col-md-4 col-sm-4 col-xs-4 div-icon">
+          <div class="col-md-4 col-sm-4 col-xs-12 div-icon">
             <p class="subtitulo">Busca informacion</p>
-            <i class="fas fa-bed icon-fa"></i>
+            <i class="fas fa-search icon-fa"></i>
           </div>
         </div>
       </div>
-
       <div class="container" id="container_maps">
-
-          <h2>ENCUENTRANOS ;)</h2>
-		  <!-- the div below shows the google map-->
-          <div id="map"></div>
-		  
-		  <!-- the div below plays the snippet of theater.js mat-->
-          <div id="jarbis"></div>
+        <h3>ENCUENTRANOS ;)</h3>
+        <!-- the div below shows the google map-->
+        <div id="map"></div>
+        
+        <!-- the div below plays the snippet of theater.js mat-->
+        <div id="jarbis"></div>
       </div>
-
       <div class="container">
         <div class ="row">
           
@@ -148,23 +156,22 @@
       
       
       <!-- Snippet from Snippet of https://github.com/Zhouzi/TheaterJS
-		(the most simple one and adapted)-->
+      (the most simple one and adapted)-->
       <script src="js/TheaterJS.js"></script>
       
-	  
-     
-	  <!-- function required by google map api-->
-	  <script src="js/google_map.js"></script>
-      <!-- call to google map api -->     
-	  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtM6SeGPu3r34XWj2umqZFIKjn12ye7rs&callback=myMap"></script> 
       
-	  
+      
+      <!-- function required by google map api-->
+      <script src="js/google_map.js"></script>
+      <!-- call to google map api -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtM6SeGPu3r34XWj2umqZFIKjn12ye7rs&callback=myMap"></script>
+      
+      
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       
-	  <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
       <script src="js/scripts.js"></script>
-
     </body>
   </html>
