@@ -15,7 +15,7 @@
 }
 
 
-#integrantes_block , #signup_form, #login_form{	
+#integrantes_block , #signup_form, #login_form, #images_search{	
 	display:flex;
 	flex-direction:column;
 	align-items:center;
@@ -28,7 +28,7 @@
 }
 
 
-body.quienes_somos , body.login, body.signup{	
+body.quienes_somos , body.login, body.signup, body.search{	
 	
 	height:100vh;/*important to push the footer at the bottom*/
 	display:flex;
