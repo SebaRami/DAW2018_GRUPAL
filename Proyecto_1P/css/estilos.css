@@ -1,5 +1,16 @@
+ #main_button{
+	font-family: 'Courgette', cursive;/* style for index main title */
+}
+#main_tittle{		
+	font-family: 'PT Sans', sans-serif;/*style for menu bar, footer and */	
+	text-transform:capitalize;
+}
+
+*{
+	font-family: 'PT Sans', sans-serif;/*style for menu bar, footer and */	
+}
 .titulo{
-  font-size: 50px;
+  font-size: 50px;  
   text-transform: uppercase;
   color: #812f35;
 }
@@ -26,6 +37,7 @@
 	
 	flex-grow:1;/*important to push the footer at the bottom*/
 }
+
 
 
 body.quienes_somos , body.login, body.signup, body.search{		

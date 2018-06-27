@@ -61,4 +61,4 @@ function buscarPersonaje(){
 //do the query on real time it gets very complex on enhancing user experience.
 //document.getElementById("buscar_personaje").addEventListener("keyup", buscarPersonaje);	
 
-document.getElementById("search-button").addEventListener("click", buscarPersonaje);	
+document.getElementById("search-button").addEventListener("click", buscarPersonaje);
