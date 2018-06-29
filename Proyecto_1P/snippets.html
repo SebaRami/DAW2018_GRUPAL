@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>¿Quienes somos?</title>
-    
+    <title>Busqueda</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/estilos.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/busqueda.css">
+    <link type="text/css" href="css/base.css" rel="stylesheet" />
+    <script src="js/jit.js"></script>
+    <script src="js/graph.js"></script>
     
   </head>
-  <body class="quienes_somos">
+  <body class="search" onload="init()">
     <nav class="navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -26,6 +29,7 @@
           </button>
         </div>
         
+        
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
@@ -33,24 +37,58 @@
             <li><a href="snippets.html">Snippets</a></li>
             <li><a href="busqueda.html">Busqueda</a></li>
             <li><a href="quienes_somos.html">¿Quienes Somos?</a></li>
+            
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="inicio_sesion.html">Inicia Sesión</a></li>
+            <li><a href="inicio_sesion.html">Inicia Sesion</a></li>
             <li><a href="registrar.html">Registrate</a></li>
           </ul>
           </div><!-- /.navbar-collapse -->
         </div>
       </nav>
       
-      <div class="container" id="integrantes_block">
-        <h2>Integrantes</h2>
-        <ul>
-          <li>Roberto Mena</li>
-          <li>Sebastian Ramirez</li>
-        </ul>
+      <div id="container" class="container">
+        <div class="row">
+          <p class="text-center titulo">
+            El teatro
+          </p>
+          <div class="col">
+            <div id="center-container">
+              <div id="infovis"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="log"></div>
       </div>
       
-      
+      <div class="container" id="timeline">
+        <p class="text-center titulo">
+            Linea de tiempo
+          </p>
+        <!-- CSS timeline  -->
+        <!-- data-date is an atribute to set the date, is defined by us-->
+        <div id="timeline_container">
+          <ul class="timeline">
+            <li class="event" data-date="19 de Mayo/2018">
+              <h3>Idea de proyecto</h3>
+              <p>Concebimos la idea del proyecto, como un recurso valioso para actores.</p>
+            </li>
+            <li class="event" data-date="5 de Junio/2018">
+              <h3>Diseño preliminar</h3>
+              <p>Establecimos el formato del sitio web y subimos las pimeras paginas a GitHub.</p>
+            </li>
+            <li class="event" data-date="17 de Junio/2018">
+              <h3>Snippets y Timeline</h3>
+              <p>Agregamos un snippet interactivo basado en javascript y colocamos un timeline.</p>
+            </li>
+            <li class="event" data-date="22 de Junio/2018">
+              <h3>Presentacion de avance</h3>
+              <p>Pulimos el trabajo realizado para presentarlo como avance.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
       
       <footer>
         Proyecto de DAW1S - 2018&copy;

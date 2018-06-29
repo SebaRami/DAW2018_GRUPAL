@@ -119,6 +119,10 @@ footer{
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Oswald:400,300,700);
 /* Variables */
 /* Base */
+
+#timeline{
+  margin-top: 4%;
+}
 strong {
   font-weight: 600;
 }
@@ -133,6 +137,7 @@ h1 {
   background: #252827;
   margin-top: 50px; 
   text-align: center;
+  padding: 1%;
 }
 /* Timeline */
 .timeline {
@@ -208,4 +213,34 @@ h1 {
 
 .mostrar {
   display: block;
+}
+
+.link {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+
+#licensing {
+  fill: green;
+}
+
+.link.licensing {
+  stroke: green;
+}
+
+.link.resolved {
+  stroke-dasharray: 0,2 1;
+}
+
+circle {
+  fill: #ccc;
+  stroke: #333;
+  stroke-width: 1.5px;
+}
+
+text {
+  font: 10px sans-serif;
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
 }
