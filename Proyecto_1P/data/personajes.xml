@@ -3,7 +3,8 @@
 		<nombre>albañil</nombre>
 		<personalidad>timido,inteligente</personalidad>			
 		<referencias>
-			<referencia>google.com</referencia>
+			<referencia>google.com</referencia>			
+			<referencia>wikipedia.com</referencia>
 		</referencias>
 	</personaje>	
 	
@@ -11,7 +12,8 @@
 		<nombre>arquitecto</nombre>
 		<personalidad>timido,inteligente</personalidad>		
 		<referencias>
-			<referencia>google.com</referencia>
+			<referencia>google.com</referencia>			
+			<referencia>wikipedia.com</referencia>
 		</referencias>
 	</personaje>
 	
@@ -19,7 +21,8 @@
 		<nombre>astronauta</nombre>
 		<personalidad>timido,inteligente</personalidad>		
 		<referencias>
-			<referencia>google.com</referencia>
+			<referencia>google.com</referencia>			
+			<referencia>wikipedia.com</referencia>
 		</referencias>
 	</personaje>
 	
@@ -27,7 +30,8 @@
 		<nombre>bombero</nombre>
 		<personalidad>timido,inteligente</personalidad>		
 		<referencias>
-			<referencia>google.com</referencia>
+			<referencia>google.com</referencia>			
+			<referencia>wikipedia.com</referencia>
 		</referencias>
 	</personaje>
 	
@@ -35,7 +39,8 @@
 		<nombre>carnicero</nombre>
 		<personalidad>timido,inteligente</personalidad>		
 		<referencias>
-			<referencia>google.com</referencia>
+			<referencia>google.com</referencia>			
+			<referencia>wikipedia.com</referencia>
 		</referencias>
 	</personaje>
 	
@@ -43,7 +48,89 @@
 		<nombre>cientifico</nombre>
 		<personalidad>timido,inteligente</personalidad>		
 		<referencias>
+			<referencia>google.com</referencia>			
+			<referencia>wikipedia.com</referencia>
+		</referencias>
+	</personaje>
+	
+	<personaje>
+		<nombre>cocinero</nombre>
+		<personalidad>timido,inteligente</personalidad>		
+		<referencias>
+			<referencia>google.com</referencia>			
+			<referencia>wikipedia.com</referencia>
+		</referencias>
+	</personaje>
+	
+	<personaje>
+		<nombre>granjero</nombre>
+		<personalidad>timido,inteligente</personalidad>		
+		<referencias>
+			<referencia>google.com</referencia>			
+			<referencia>wikipedia.com</referencia>
+		</referencias>
+	</personaje>
+	
+	<personaje>
+		<nombre>juez</nombre>
+		<personalidad>timido,inteligente</personalidad>		
+		<referencias>
+			<referencia>google.com</referencia>			
+			<referencia>wikipedia.com</referencia>
+		</referencias>
+	</personaje>
+	
+	<personaje>
+		<nombre>mafioso</nombre>
+		<personalidad>timido,inteligente</personalidad>		
+		<referencias>
+			<referencia>google.com</referencia>			
+			<referencia>wikipedia.com</referencia>
+		</referencias>
+	</personaje>
+	
+	<personaje>
+		<nombre>monje</nombre>
+		<personalidad>timido,inteligente</personalidad>		
+		<referencias>
+			<referencia>google.com</referencia>			
+			<referencia>wikipedia.com</referencia>
+		</referencias>
+	</personaje>
+	
+	<personaje>
+		<nombre>panadero</nombre>
+		<personalidad>timido,inteligente</personalidad>		
+		<referencias>
+			<referencia>google.com</referencia>			
+			<referencia>wikipedia.com</referencia>
+		</referencias>
+	</personaje>
+	
+	<personaje>
+		<nombre>periodista</nombre>
+		<personalidad>timido,inteligente</personalidad>		
+		<referencias>
 			<referencia>google.com</referencia>
+			<referencia>wikipedia.com</referencia>
+		</referencias>
+	</personaje>
+	
+	<personaje>
+		<nombre>psicopata</nombre>
+		<personalidad>timido,inteligente</personalidad>		
+		<referencias>
+			<referencia>google.com</referencia>
+			<referencia>wikipedia.com</referencia>
+		</referencias>
+	</personaje>
+	
+	<personaje>
+		<nombre>tenista</nombre>
+		<personalidad>timido,inteligente</personalidad>		
+		<referencias>
+			<referencia>google.com</referencia>			
+			<referencia>wikipedia.com</referencia>
 		</referencias>
 	</personaje>
 	

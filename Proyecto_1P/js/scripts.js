@@ -1,16 +1,60 @@
+
+
+function create_img_tag_personaje(nombre){
+	//the name in xml is the same as the .jpg file
+	var img_path="img/personajes/" + nombre + ".jpg";	
+			
+	//construct the hmtl img tag
+	var img_html="<img src='" + img_path + "' alt='" + nombre +"'>" ;
+	
+	return img_html;
+	
+}
+function create_div_personaje_info(nombre, personalidad, referencias){
+	
+	//treat referencias as JQuery object 
+	/*
+		referencias is a object that contains 'referencia' subtags
+	*/
+
+	var p_tag_nombre=$("<p></p>").text("Nombre: " + nombre);
+	var p_tag_personalidad=$("<p></p>").text("Personalidad: " + personalidad);
+	
+	//create a ul tag that will contain the url references	
+	var ul_tag_ref=$("<ul></ul>");
+	
+	$(ul_tag_ref).append("Referencias:");
+	$(referencias).find("referencia").each( function(){				
+		$(ul_tag_ref).append("<li>"+ $(this).text()+ "</li>");
+	})
+	
+	var myDiv=$("<div></div>").append(p_tag_nombre,p_tag_personalidad,ul_tag_ref);
+	/*
+	console.log(nombre + " " 	
+				+ p_tag_nombre
+				+ " "
+				+ p_tag_personalidad
+				+ " "
+				+ ul_tag_ref
+				+ "\n");
+	*/
+	//console.log(myDiv.text());
+	return myDiv;	
+}
+
 function buscarPersonaje(){
 	
 	//get the text from the search input
-	searchInput = document.getElementById("buscar_personaje").value;
+	searchInput = document.getElementById("buscar_personaje_input").value;
 	
 	if(searchInput=="") {
-		$("div[class='images_found_section']").empty();
-		console.log("em");
+		$("div[class='personajes_found_section']").empty();
+		console.log("empty the div section on empty input");
 		return;
 	}
 	
 	//clean the div of previous images to put the new ones, based on the new query
-	$("div[class='images_found_section']").empty();	
+	$("div[class='personajes_found_section']").empty();	
 			
 	//make ajax request to personajes.xml		
 	var resultsFound=false
@@ -18,30 +62,47 @@ function buscarPersonaje(){
 		$(xml).find('personaje').each(function(){
 			//get nombre
 			var nombre = $(this).find('nombre').text();
-			if(nombre.includes(searchInput) ){								
+			/*
+			just one result
+			*/
+			if(nombre.includes(searchInput) && !resultsFound ){								
 				//from here take whatever you need and load it in the html
 				
-				//the name in xml is the same as the .jpg file
-				var img_path="img/personajes/" + nombre + ".jpg";	
+				/*
+					structure of personaje tag in xml is:
+					
+					personaje
+						nombre
+						personalidad
+						referencias		
+							referencia1
+							...
+							referenciaN
 				
-				//construct the hmtl img tag
-				var img_html="<img src='" + img_path + "' alt='" + nombre +"'>" ;
+				*/
+							
+				var personalidad=$(this).find('personalidad').text();	
+				var referencias=$(this).find('referencias');			
 				
-				//console.log(img_path);
-								
-				//load image
-				$("div[class='images_found_section']").append(img_html);
+				var div_personaje_info = create_div_personaje_info(nombre, personalidad,referencias);				
+				
+				$(div_personaje_info).attr("class","div_personaje_info");
+				var img_tag_personaje = create_img_tag_personaje(nombre);
+
+				var div_personaje = $("<div></div>").append(img_tag_personaje,div_personaje_info);
+				
+				$(div_personaje).attr("class","div_personaje");
+				
+				$("div[class='personajes_found_section']").append(div_personaje);																			
+				
 				resultsFound=true;
 			}
 		});
 		//if no result display meessage
-		if(resultsFound) {
-			$("div[class='images_found_section']").append("<p>Resultados que contienen : " + searchInput + "</p>")
-		}else{
-			$("div[class='images_found_section']").append("<p>No hay resultados para : " + searchInput + "</p>")		
+		if(!resultsFound) {			
+			$("div[class='personajes_found_section']").append("<p>No hay resultados para : " + searchInput + "</p>")		
 		};
-	});
-	
+	});	
 	/*
 	var divs = document.querySelectorAll('div#images_search');
 	for (div of divs){
@@ -59,6 +120,6 @@ function buscarPersonaje(){
 
 
 //do the query on real time it gets very complex on enhancing user experience.
-//document.getElementById("buscar_personaje").addEventListener("keyup", buscarPersonaje);	
+//document.getElementById("buscar_personaje_input").addEventListener("keyup", buscarPersonaje);	
 
 document.getElementById("search-button").addEventListener("click", buscarPersonaje);

@@ -33,12 +33,14 @@
 	justify-content:center;
 	
 	
-	/*border:1px red solid;*/ /*line for debugging*/
+	/*border:1px red solid; *//*line for debugging*/
 	
 	flex-grow:1;/*important to push the footer at the bottom*/
 }
 
-
+#integrantes_block {
+	align-items: flex-start; /*overwrite the css to #integrantes_block */
+}
 
 body.quienes_somos , body.login, body.signup, body.search{		
 	height:100vh;/*important to push the footer at the bottom*/
@@ -50,16 +52,32 @@ body.quienes_somos , body.login, body.signup, body.search{
 /*
 	a div where images will be put
 */
-body .images_found_section{
-	display:flex;
-	flex-wrap:wrap;
+body .personajes_found_section{
+	display:block;
 	/*height:25vh;*//*to move the search box upside*/
+}
+
+/*
+	div with info of personajes
+*/
+
+.div_personaje{
+	display:flex;
+}
+
+/*
+	the only div inside of .div_personaje is the div with info
+*/
+.div_personaje .div_personaje_info{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
 }
 
 /*
 	Style for the images that will appear
 */
-body .images_found_section img{	
+body .personajes_found_section img{	
 	border-radius:5px;
 	margin:10px;
 	height:40vh;
@@ -112,7 +130,7 @@ footer{
 **************************/
 
 /*
-	source code: https://codepen.io/darcyvoutt/pen/ogPrpK
+	adapted from: https://codepen.io/darcyvoutt/pen/ogPrpK
 */
 
 /* Import */
