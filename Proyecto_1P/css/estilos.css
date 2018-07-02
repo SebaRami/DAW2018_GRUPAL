@@ -1,19 +1,20 @@
- #main_button{
-	font-family: 'Courgette', cursive;/* style for index main title */
+#main_button {
+	font-family: 'Courgette', cursive;
 }
 #main_tittle{		
-	font-family: 'PT Sans', sans-serif;/*style for menu bar, footer and */	
+	font-family: 'Courgette', sans-serif;	
 	text-transform:capitalize;
 }
 
 *{
-	font-family: 'PT Sans', sans-serif;/*style for menu bar, footer and */	
+	font-family: 'PT Sans', sans-serif;/*style for menu bar, footer and * */	
 }
 .titulo{
   font-size: 50px;  
   text-transform: uppercase;
   color: #812f35;
 }
+
 
 .subtitulo{
   display: flex;
@@ -63,11 +64,10 @@ body .personajes_found_section{
 
 .div_personaje{
 	display:flex;
+	font-family: 'PT Sans', sans-serif;
 }
 
-/*
-	the only div inside of .div_personaje is the div with info
-*/
+
 .div_personaje .div_personaje_info{
 	display:flex;
 	flex-direction:column;
@@ -85,14 +85,24 @@ body .personajes_found_section img{
 }
 
 
-footer{
+footer{	
 	display:flex;
 	justify-content:center;	
-	background-color:black;	
+	background-color:black;		
 	padding:10px;
 	color:gray;
 }
 
+footer[id="snippetpage_footer"]{
+	display:block; /*fix footer on that page*/	
+}
+
+@media screen and (max-width: 768px) {
+
+    footer[id="snippetpage_footer"]{       
+        width: 768px;
+    }
+}
 
 /**************************
 	Style for google map
@@ -139,8 +149,17 @@ footer{
 /* Base */
 
 #timeline{
-  margin-top: 4%;
+	margin-top:2%;
 }
+
+@media screen and (max-width: 768px) {
+
+    #timeline {
+        width:768px;
+    }
+	
+}
+
 strong {
   font-weight: 600;
 }
@@ -152,10 +171,8 @@ h1 {
   font-size: 2.4em;
 }
 #timeline_container {
-  background: #252827;
-  margin-top: 50px; 
-  text-align: center;
-  padding: 1%;
+  background: #252827;  
+  text-align: center;  
 }
 /* Timeline */
 .timeline {
@@ -166,6 +183,10 @@ h1 {
   color: rgba(255, 255, 255, 0.8);
   font-family: 'Source Sans Pro', sans-serif;
   margin: 50px auto;
+  
+  margin-bottom:0px;
+  margin-top:0px;
+  
   letter-spacing: 0.5px;
   position: relative;
   line-height: 1.4em;
